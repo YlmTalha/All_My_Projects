@@ -1,0 +1,46 @@
+# Değişkenler
+Değişkenler, bir değeri tutmak ve bu değeri programın ilerleyen bölümlerinde kullanmak için kullanılır.
+
+# Değişken Tanımlama Kuralları
+	Bir değişkenin kısa bir adı (x ve y gibi) veya daha açıklayıcı bir adı (yaş, soyad, toplam_deger) olabilir.
+1) Bir değişken adı bir harfle veya alt çizgi(_) karakteriyle başlamalıdır.
+2) Bir değişken adı sayı(0-9) ile başlayamaz.
+3) Bir değişken adı, harf (a-z, A-Z), rakam (0-9) ve alt çizgi (_) içerebilir.
+4) Değişken adları büyük/küçük harfe duyarlıdır (yas, Yas ve YAS üç farklı değişkendir).
+
+# Değişken Türleri
+Python’da değişkenler farklı veri türlerine sahip olabilir:
+
+Metin Türü:	   |	str
+Sayısal Türler:	   |	int, float, complex
+Sıra Türleri:      |	list, tuple, range
+Haritalama Türü:   |	dict
+Set Türleri:	   |	set,frozenset
+Boole Türü:	   |	bool
+İkili Tipler:	   |	bytes, bytearray, memoryview
+Hiçbiri Türü:	   |	NoneType
+
+#Bellek Yönetimi ve Performans
+Python, dahili çöp toplayıcısı aracılığıyla bellek yönetimini otomatik olarak gerçekleştirir
+
+1. Bellek Yönetimi:
+Çöp Toplayıcı (Garbage Collector): Python, kullanılmayan (referans verilmeyen) nesneleri tespit eder ve otomatik olarak bellekten temizler.
+
+2. Veri Türleri ve Bellek Kullanımı:
+Basit Veri Türleri: Örneğin, bir int veya float veri türü küçük miktarda bellek kullanır. Ancak, daha büyük sayılar ve ondalıklı sayılar, daha fazla bellek gerektirebilir.
+
+int	Tam sayılar				28 byte (64-bit sistem)
+float	Ondalıklı sayılar			8 byte
+str	Karakter dizileri (ASCII, UTF-8)	Karakter sayısına bağlı, ASCII için 1 byte, UTF-8 için 1-4 byte
+list	Liste (Öğelere bağlı olarak değişir)	56 byte (boş liste), öğe sayısına göre artar
+dict	Anahtar-değer çiftleri (Sözlük)		240 byte (boş sözlük), öğe sayısına göre artar
+tuple	Değiştirilemez liste			48 byte (boş tuple), öğe sayısına bağlı olarak artar
+
+Kompleks Veri Türleri: Listeler (list), sözlükler (dict), kümeler (set) gibi daha karmaşık veri türleri ise, elemanları saklamak için daha fazla bellek kullanır.
+
+3. Kod Performansı:
+Kodun performansı, kullanılan veri yapılarına ve bellek yönetimine bağlı olarak değişir; karmaşık veri yapıları ve 
+büyük veriler daha fazla bellek tüketir ve işlem süresini uzatır.
+
+
+---Araştırma kaynaklarım: docs.python.org, geeksforgeeks.org, w3schools.com, ChatGPT------

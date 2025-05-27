@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>New City Lande</title>
+    <meta name="title" content="New City Lande">
+    <meta name="description" content="TalhaYILMAZ tarafından oluşturulan web sitesidir">
+
+    <!-- 
+        - Site simgesi
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+        - google font linkleri
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 
+        - google ikon linkleri
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+    <!--
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+        custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--
+        - önden yüklenmiş görseller
+    -->
+    
+</head>
+<body>
+    
+    <!--
+        -#HEADER
+    -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img class="asddsa" src="./assets/images/New City Land Logo-1.png" width="190" height="28" alt="New City Lande">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <ul class="navbar-list">
+                    
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Menü</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Kiralık</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Sat</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Satılık</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Hakkında</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="navbar-wrapper">
+                    <a href="#" class="btn-link label-medium">Giriş</a>
+
+                    <a href="#" class="btn btn-fill label-medium">Başlayalım</a>
+                </div>
+
+            </nav>
+
+            <button class="nav-toogle-btn icon-btn" aria-label="toogle navbar" data-nav-toggler>
+                <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+
+                <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+            </button>
+
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!--
+                - #ARAMA
+            -->
+
+            <section class="hero">
+                <div class="container">
+
+                    <div class="hero-contect">
+
+                        <h1 class="headline-large hero-title">Kendiniz olabileceğiniz bir yer bulun.</h1>
+
+                        <p class="body-large hero-text">
+                            Kendiniz olabileceğiniz bir yer arıyorsanız pes etmeyin. Eviniz gibi hissettiren bir yer bulana kadar aramaya devam edin.
+
+                        <form action="./" method="get" class="search-bar">
+
+                            <label class="search-item">
+                                <span class="label-medium label">Tür</span>
+
+                                <select name="want-to" class="search-item-field body-medium">
+                                    <option value="buy" selected>Satılık</option>
+                                    <option value="sell">Sat</option>
+                                    <option value="rent">Kiralık</option>
+                                </select>
+
+                                <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
+                            </label>
+
+
+                            <label class="search-item">
+                                <span class="label-medium label">Seçenekler</span>
+
+                                <select name="property-type" class="search-item-field body-medium">
+                                    <option value="any" selected>Hepsi</option>
+                                    <option value="houses">evler</option>
+                                    <option value="apartments">apartmanlar</option>
+                                    <option value="villa">Villa</option>
+                                    <option value="townhome">Arsa</option>
+                                    <option value="bungalow">Tarla</option>
+                                    <option value="loft">Tarla</option>
+                                </select>
+
+                                <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+                            </label>
+
+                            <label class="search-item">
+                                <span class="label-medium label">Konum</span>
+
+                                <input type="text" name="location" placeholder="İl, İlçe , Vb..." class="search-item-field body-medium">
+
+                                <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+                            </label>
+
+                            <button type="submit" class="search-btn">
+                                <span class="material-symbols-rounded" aria-hidden="true">search</span>
+
+                                <span class="label-medium">Arama</span>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <img src="./assets/images/hero.png" width="816" height="659" role="presentation" class="hero-banner">
+
+                    <img src="./assets/images/bg-pattern.png" width="1240" height="840" role="presentation" class="bg-pattern">
+
+
+                </div>
+            </section>
+
+
+
+            <!--
+                - #İLANLAR
+            -->
+            
+            <section class="section property" aria-labelledby="property-label">
+                <div class="container">
+
+                    <div class="title-wrapper">
+
+                        <div>
+                            <h2 class="section-title headline-small">Şehrinizdeki en iyi ev ve arsa</h2>
+
+                            <p class="section-text body-large">
+                               Aradığınız arsa ve evler en uygun şekilde New City Lande de.
+                            </p>
+                        </div>
+                        
+                        <a href="#" class="btn btn-outline">
+                            <span class="label-medium">Daha fazlasını keşfedin</span>
+
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                        </a>
+
+
+                    </div>
+
+                    <div class="property-list">
+                        <!--
+                            #İLAN 1
+                        -->
+                        <div class="card">
+
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/haraççı60.jpg" width="585" height="390" alt="COVA Home Realty" class="img-cover">
+                                </figure>
+
+                                <span class="badge label-medium">New</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">1.375.000TL</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Haraççı 60 Parsel</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                   İstanbul/Arnavutköy  Haraççı 60 parsel 250metre çaplı çevrili
+                                </address>
+    
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="meta-text label-medium">Metre Kare:250</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="meta-text label-medium">Parsel NO:60</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="meta-text label-medium">Fiyat:1.375.000</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+                        
+                        <!--
+                            #İLAN 2
+                        -->
+                        <div class="card">
+
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-2.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 3
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-3.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 4
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-4.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 5
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-5.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 6
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-6.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 7
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-7.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!--
+                            #İLAN 8
+                        -->
+                        <div class="card">
+                            
+                            <div class="card-banner">
+
+                                <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="./assets/images/property-8.jpg" width="585" height="390" alt="Exit Realty" class="img-cover">
+                                </figure>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">$630.44</span>
+    
+                                <h3>
+                                    <a href="" class="title-small card-title">Exit Realty</a>
+                                </h3>
+    
+                                <address class="body-medium card-text">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </address>
+                                
+                                <!--
+                                    #ÖLÇÜLER
+                                -->
+                                <div class="card-meta-list">
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+    
+                                        <span class="meta-text label-medium">5 bed</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+    
+                                        <span class="meta-text label-medium">4 bath</span>
+                                    </div>
+    
+                                    <div class="meta-item">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+    
+                                        <span class="meta-text label-medium">2000 sqft</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+Veri Tipi Dönüşümünün Tanımı:
+-Örtük (Implicit) Dönüşüm: Python'un kendisinin otomatik olarak gerçekleştirdiği dönüşüm.
+-Açık (Explicit) Dönüşüm: Programcının manuel olarak gerçekleştirdiği dönüşüm.
+
+Örtük ve Açık Dönüşüm Arasındaki Fark
+		Örtük Dönüşüm				Açık Dönüşüm
+Yapılma Şekli |	Python tarafından otomatik yapılır.   |	Programcı tarafından manuel yapılır.
+	      |					      |	
+Hata Riski    |	Hata riski azdır, güvenlidir.	      |	Dikkatli olunmazsa veri kaybı veya 
+	      |					      |	hata oluşabilir.
+	      |					      |	
+Örnek Durumlar|	Daha düşük öncelikli bir veri tipinin,|	String, tamsayı veya float tiplerinin 
+		yüksek öncelikli bir tipe dönüşümü.   |	dönüştürülmesi.
+
+Python’da Kullanılan Dönüşüm Fonksiyonları
+
+int()	:Veriyi tamsayıya dönüştürür.			 |	32 bit veya 64 bit
+float()	:Veriyi ondalık bir sayıya dönüştürür.		 |	64 bit
+str()	:Veriyi string (metin) tipine dönüştürür.	 |	Her karakter 1 byte = 8 bit
+bool()	:Veriyi boolean (True/False) tipine dönüştürür.	 |	1 bit
+list()	:Veriyi liste tipine dönüştürür.		 |	Her eleman bağımsızdır; toplam boyut veri tipine bağlıdır.
+tuple()	:Veriyi demet (tuple) tipine dönüştürür.	 |	Listeye benzer, ancak genelde daha az yer kaplar.
+set()	:Veriyi küme (set) tipine dönüştürür.		 |	Eleman sayısına ve türüne bağlıdır.
+dict()	:Veriyi sözlük (dictionary) tipine dönüştürür.	 |	Anahtar ve değer çiftlerinin toplam boyutuna bağlıdır.
+
+      Birçok dilde bulunan Double() veri tipi python'da bulunmamaktadır. Bunun nedeni pythonda float() 64bit yani 15-17 basamaklı sayı yer tutmaktadır. Fakat C yada Java da float() 32 bit yani 6-7 basamak yer tutmaktadır. C yada Java da 64 bitlik yer tutan Double() bulunmaktadır.
+
+
+Dikkat Edilmesi Gereken Noktalar
+Veri Uyumluluğu:
+Dönüştürmek istediğiniz veri tipi, hedef tip ile uyumlu olmalıdır. Örneğin, int("abc") bir hata verecektir.
+Veri Kaybı:
+Float'ı int'e çevirirken ondalık kısım kaybolur. Örneğin, int(5.7) sonucu 5 olacaktır.
+Hata Yönetimi:
+Dönüşüm yaparken hata durumları için uygun kontroller yapılmalıdır.

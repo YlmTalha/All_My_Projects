@@ -1,0 +1,13 @@
+HTTP Nedir?
+HTTP, istemci (örneğin, tarayıcı) ile sunucu arasındaki iletişimi sağlar.
+
+Veriler şifrelenmeden aktarılır.
+Daha hızlıdır, ancak güvenliksizdir.
+Örneğin, bir web sitesinden içerik yüklerken kullanılır.
+HTTPS Nedir?
+HTTPS, HTTP’nin şifrelenmiş halidir.
+
+Veriler SSL/TLS protokolü ile şifrelenir.
+Güvenlik sağlar: Özellikle şifre, kredi kartı bilgileri gibi hassas veriler için kullanılır.
+Tarayıcı adres çubuğunda kilit simgesi ile belirtilir.
+Fark: HTTPS, veri güvenliği sağlamak için HTTP’ye ek olarak şifreleme katmanı içerir.
